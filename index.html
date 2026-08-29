@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Market Evidence Research Tool</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #25221f;
+      --muted: #625c55;
+      --paper: #fffdf8;
+      --wash: #f2eee5;
+      --accent: #405d50;
+      --rule: #d8d0c3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--wash);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: clamp(28px, 6vw, 64px);
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      box-shadow: 0 18px 50px rgb(50 43 34 / 8%);
+    }
+    h1, h2 { line-height: 1.15; }
+    h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 3.6rem); }
+    h2 { margin-top: 40px; font-size: 1.25rem; color: var(--accent); }
+    p, li { font-size: 1.05rem; }
+    .lede { color: var(--muted); font-size: 1.2rem; }
+    .label {
+      font-family: system-ui, sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="label">Private developer application</p>
+    <h1>Market Evidence Research Tool</h1>
+    <p class="lede">A private, read-only research utility for evaluating potential product niches for a future Etsy shop.</p>
+
+    <h2>Purpose</h2>
+    <p>The tool uses Etsy Open API v3 to retrieve public active-listing metadata for internal, evidence-based market research. It helps its sole operator compare marketplace supply and identify questions that require further research. It does not make purchasing, publishing, or shop-management decisions.</p>
+
+    <h2>Access and permitted actions</h2>
+    <ul>
+      <li>The application is private and used only by its developer.</li>
+      <li>It requests public, read-only active-listing information.</li>
+      <li>It does not create, edit, renew, deactivate, or delete listings.</li>
+      <li>It does not access orders, messages, payment information, or private shop data.</li>
+      <li>It does not contact buyers or sellers, automate purchases, or circumvent Etsy interfaces or access controls.</li>
+    </ul>
+
+    <h2>Data handling and privacy</h2>
+    <p>The tool stores bounded research artifacts derived from approved API responses, including retrieval time, public listing fields, search terms, source identifiers, and cryptographic digests. These records are retained privately for research traceability and quality review. API credentials are stored separately, are never included in research artifacts, and are not provided to analytical models.</p>
+    <p>The application has no public users, collects no information directly from visitors to this page, uses no cookies or analytics, and does not sell or disclose data to third parties. If its access or purpose changes, this notice and the Etsy developer application will be updated before that change occurs.</p>
+
+    <h2>Contact</h2>
+    <p>The operator can be contacted through the developer contact information associated with the corresponding Etsy application.</p>
+
+    <footer>
+      <p>Last updated: August 29, 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
