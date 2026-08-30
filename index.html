@@ -35,6 +35,7 @@
     h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 3.6rem); }
     h2 { margin-top: 40px; font-size: 1.25rem; color: var(--accent); }
     p, li { font-size: 1.05rem; }
+    video { width: 100%; border: 1px solid var(--rule); border-radius: 10px; background: #1f2421; }
     .lede { color: var(--muted); font-size: 1.2rem; }
     .label {
       font-family: system-ui, sans-serif;
@@ -54,12 +55,20 @@
     <p class="lede">A private, read-only research utility for evaluating potential product niches for a future Etsy shop.</p>
 
     <h2>Purpose</h2>
-    <p>The tool uses Etsy Open API v3 to retrieve public active-listing metadata for internal, evidence-based market research. It helps its sole operator compare marketplace supply and identify questions that require further research. It does not make purchasing, publishing, or shop-management decisions.</p>
+    <p>The tool uses Etsy Open API v3 and the EverBee Research Open API to retrieve read-only listing, shop, and keyword analytics for internal, evidence-based market research. It helps its sole operator compare marketplace supply, third-party demand estimates, and unanswered questions. It does not make purchasing, publishing, or shop-management decisions.</p>
+
+    <h2>EverBee Research API review demonstration</h2>
+    <p>This captioned demonstration shows the proposed technical flow using mock data derived from EverBee's published OpenAPI schema. It makes no live EverBee request and clearly labels all simulated values because production API access is pending provider approval.</p>
+    <video controls preload="metadata">
+      <source src="everbee-research-api-demo.mp4" type="video/mp4">
+      Your browser does not support embedded MP4 video. <a href="everbee-research-api-demo.mp4">Download the demonstration</a>.
+    </video>
 
     <h2>Access and permitted actions</h2>
     <ul>
       <li>The application is private and used only by its developer.</li>
       <li>It requests public, read-only active-listing information.</li>
+      <li>Its EverBee integration uses documented Research Open API GET endpoints only.</li>
       <li>It does not create, edit, renew, deactivate, or delete listings.</li>
       <li>It does not access orders, messages, payment information, or private shop data.</li>
       <li>It does not contact buyers or sellers, automate purchases, or circumvent Etsy interfaces or access controls.</li>
@@ -67,13 +76,13 @@
 
     <h2>Data handling and privacy</h2>
     <p>The tool stores bounded research artifacts derived from approved API responses, including retrieval time, public listing fields, search terms, source identifiers, and cryptographic digests. These records are retained privately for research traceability and quality review. API credentials are stored separately, are never included in research artifacts, and are not provided to analytical models.</p>
-    <p>The application has no public users, collects no information directly from visitors to this page, uses no cookies or analytics, and does not sell or disclose data to third parties. If its access or purpose changes, this notice and the Etsy developer application will be updated before that change occurs.</p>
+    <p>The application has no public users, collects no information directly from visitors to this page, uses no cookies or analytics, and does not sell or disclose data to third parties. If its access or purpose changes, this notice and the relevant developer applications will be updated before that change occurs.</p>
 
     <h2>Contact</h2>
     <p>The operator can be contacted through the developer contact information associated with the corresponding Etsy application.</p>
 
     <footer>
-      <p>Last updated: August 29, 2026</p>
+      <p>Last updated: August 30, 2026</p>
     </footer>
   </main>
 </body>
