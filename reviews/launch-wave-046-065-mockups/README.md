@@ -1,6 +1,6 @@
 # Products 046–065 — Corrected Lifestyle Mockup Review
 
-Twenty confirmed **unpublished** Printify drafts. These lifestyle scenes preserve the exact Printify-rendered product artwork. No publication approval is recorded.
+Twenty confirmed **unpublished** Printify drafts. These individually generated lifestyle scenes use the final production artwork and Printify geometry as authorities. The rejected composited packet has been superseded. No publication approval is recorded.
 
 Products 046–049 use transparent mug artwork. Products 050–065 intentionally use full-bleed artwork appropriate to doormats, pillows, ornaments, and coasters. Product 048 is the corrected face-aligned successor; its excluded predecessor drafts are not represented here.
 
